@@ -24,6 +24,7 @@ class ApplicationController < Sinatra::Base
     erb :index
   end 
   
+<<<<<<< HEAD
   get '/articles/new' do 
     erb :new 
   end 
@@ -66,4 +67,15 @@ class ApplicationController < Sinatra::Base
     redirect to "/articles"
   end 
 
+=======
+  # get '/articles/:id' do 
+  #   # binding.pry
+  #   a = params[:id]
+  # end 
+  
+  # post '/articles' do 
+  #   @article1 = Article.create(title: params[:article_title], content: params[:article_content])
+  #   binding.pry
+  # end 
+>>>>>>> ff234886beaa75137e7e312fa458334a63f18bc1
 end
